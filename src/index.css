@@ -19,3 +19,10 @@ body {
   padding: 4px;
   max-width: 180px;
 }
+.file-icon {
+  width: 17px;
+  padding: 4px;
+}
+.file-icon .fa-folder {
+  color: #508fca;
+}

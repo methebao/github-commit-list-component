@@ -1,9 +1,10 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import FileName from './FileName';
 
 const FileListItem = ({ file }) => (
   <tr className="file-list-item">
-    <td className="file-name">{file.name}</td>
+    <FileName name={file.name} type={file.type} />
   </tr>
 );
 FileListItem.propTypes = {
