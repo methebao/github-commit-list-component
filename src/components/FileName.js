@@ -6,10 +6,14 @@ const FileIcon = ({ type }) => {
   switch (type) {
     case 'folder':
       defaultIcon = <i className="fa fa-folder" />;
+      break;
     default:
       break;
   }
   return <span className="file-icon">{defaultIcon}</span>;
+};
+FileIcon.proptTypes = {
+  type: PropTypes.string,
 };
 const FileName = ({ name, type }) => (
   <td className="file-name">
@@ -17,4 +21,8 @@ const FileName = ({ name, type }) => (
     {name}
   </td>
 );
+FileName.propTypes = {
+  name: PropTypes.string,
+  type: PropTypes.string,
+};
 export default FileName;

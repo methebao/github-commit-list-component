@@ -10,7 +10,7 @@ const FileList = ({ files }) => (
   <table className="file-list">
     <tbody>
       {files.map(file => (
-        <FileListItem file={file} />
+        <FileListItem file={file} key={file.id} />
       ))}
     </tbody>
   </table>
